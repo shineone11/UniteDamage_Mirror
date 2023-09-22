@@ -1,0 +1,2 @@
+cd  C:\Users\Shinichi\python\UniteDamage\flask\UniteDamage>
+flask --app flaskr --debug run
