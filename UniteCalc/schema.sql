@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS user;
-DROP TABLE IF EXISTS post;
+DROP TABLE IF EXISTS M_pokemon;
 
 CREATE TABLE user (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -19,13 +19,13 @@ CREATE TABLE M_pokemon (
   crit INTEGER NOT NULL,
   cdr INTEGER NOT NULL,
   ls INTEGER NOT NULL,
-  as INTEGER NOT NULL,
-  ms INTEGER NOT NULL,
+  asd INTEGER NOT NULL,
+  msd INTEGER NOT NULL,
   melee INTEGER NOT NULL,
   ranged INTEGER NOT NULL,
-  type INTEGER NOT NULL, 
+  type INTEGER NOT NULL
 );
 
 /* 適当insert */
-insert into M_pokemon(level,pokename,hp,atk,def,spatk,spdef,crit,cdr,ls,as,ms,melee,ranged,type,img) 
+insert into M_pokemon (level,pokename,hp,atk,def,spatk,spdef,crit,cdr,ls,asd,msd,melee,ranged,type) 
 values(1,'Absol',3000,140,	52,	20,	36,	0, 	0, 	0, 	10.00, 	3650,1,0,3);

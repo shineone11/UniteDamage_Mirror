@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Posts{% endblock %}</h1>
+  {% if g.user %}
+    <a class="action" href="#">Build</a>
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  {% for pokemon in pokemons %}
+    <div class="pokemon">
+      <header>
+        <div>
+          <h1>{{ pokemon['pokename'] }}</h1>
+          <img class="" src="https://d275t8dp8rxb42.cloudfront.net/pokemon/portrait/{{pokemon['pokename']}}.png">
+        </div>
+      </header>
+    </div>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
